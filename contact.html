@@ -22,25 +22,24 @@
 
     <section>
         <img src="graphics/closeBees.jpg" class="contactPicture">
-        <form onchange="validate()">
+        <form onchange="validateIfEmpty()">
             <div>
                 <label for="firstName">First name:</label>
                 <input type="text" name="firstName" id="firstName" size="40" placeholder="Enter your name"></input><br>
-                <p class="error-hidden">Please provide your name.</p>
+                <p id="errorMessageFirstName" class="error-hidden">Please provide your name.</p>
             </div>
             <div>
                 <label for="email">Email:</label>
                 <input type="email" name="email" id="email" size="40" placeholder="Give your email"></input><br>
-                <p class="error-hidden">Please provide correct email.</p>
+                <p id="errorMessageEmail" class="error-hidden">Please provide correct email.</p>
             </div> 
             <div>
                 <label for="message">Message:</label>
                 <textarea cols="50" rows="8" placeholder="Type here your message" id="message"></textarea><br>
-                <p class="error-hidden">Please provide text.</p>
+                <p id="errorMessage" class="error-hidden">Please provide text.</p>
             </div>
             <div>
-                
-                <input type="submit" value="SEND" id="submit" disabled="true">
+                <input type="submit" value="SEND" id="submit" disabled="true" onclick="validate()">
             </div>
         </form>
           
