@@ -12,18 +12,22 @@ function validate() {
 }
 
 function validateFirstName() {
-    if(document.getElementById("firstName").value != ""){
+    var firstName = document.getElementById("firstName");
+    var pattern = /(.?[A-Z][a-z]*)+/;
+    if(pattern.test(firstName.value)){
         return 1;
     } else {
-        document.getElementById("firstName").class="error-visible";
+        firstName.class="error-visible";
     }
 }
 
 function validateEmail() {
-    if(document.getElementById("email").value != ""){
+    var email = document.getElementById("email");
+    var pattern =/[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}/;
+    if(email.value != ""){
         return 1;
     } else {
-        document.getElementById("email").class="error-visible";
+        email.class="error-visible";
     }
 }
 
