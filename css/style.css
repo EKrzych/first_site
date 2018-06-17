@@ -175,9 +175,24 @@ input[type=submit] {
     border-radius: 10px;
 }
 
+input[type=submit]:disabled {
+    opacity: 0.3;
+}
+
 .contactPicture {
     width: 60%;
     float: left;
     padding: 12px 20px;
     margin:8px 0;
+}
+
+.error-hidden {
+    visibility: hidden;
+    margin:0;
+    font-size: 0;
+}
+
+.error-visible {
+    visibility: visible;
+    margin:0;
 }
