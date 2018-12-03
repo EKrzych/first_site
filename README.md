@@ -15,3 +15,5 @@ Optional: It should contain a welcome screening which displays an animation
 DO NOT use any CSS frameworks (e.g. Bootstrap)
 DO NOT use any JavaScript frameworks (e.g. jQuery, React)
 Remember to use sources (images, sounds etc.) only with proper usage rights, labeled 'for reuse', and give attribution to the original author. You can find many websites with free photos and graphics to commercial use, e.g. pixabay
+
+![picture](screenshots/Bees.png)
