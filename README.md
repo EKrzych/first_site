@@ -1,4 +1,4 @@
-# first_site
+# First Site
 Build your own site!
 
 In this exercise you need to create your own web page. Use everything what you've learnt so far.
